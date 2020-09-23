@@ -1,0 +1,9 @@
+- name: PerfAction for JMeter
+  # You may pin to the exact commit or the version.
+  # uses: QAInsights/PerfAction@450ebad309fd23f6b1aeee93c90aafd2da801e2d
+  uses: QAInsights/PerfAction@v1.3
+  with:
+    # jmeter test plan to execute
+    test-plan-path: ./test_google.jmx
+    # Optional arguments. For more details https://jmeter.apache.org/usermanual/get-started.html#non_gui
+    args: "" # optional
