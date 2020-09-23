@@ -27,7 +27,7 @@ jobs:
       - name: JMeter Test
         uses: QAInsights/PerfAction@v1.3
         with:
-          test-plan-path: ./test_google2.jmx
+          test-plan-path: ./test_google.jmx
           args: ""
        
       - name: Upload Results
