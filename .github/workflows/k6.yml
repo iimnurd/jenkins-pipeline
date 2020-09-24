@@ -28,6 +28,7 @@ jobs:
         uses:  iimnurd/jenkins-pipeline/tools/k6@master 
         with:
           cloud: false 
+          filename: tools/k6/default.js
           config: config/load-test-jmeter.json
        
       - name: Upload Results
