@@ -37,7 +37,6 @@ runs:
   args:
     - ${{ inputs.cloud }}
     - ${{ inputs.filename || 'test.js' }}
-    - "--summary-export=result_summary.json --out json=raw_result.json"
     - ${{ inputs.flags }}
 branding:
   icon: 'bar-chart'
