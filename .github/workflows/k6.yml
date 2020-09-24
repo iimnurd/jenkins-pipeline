@@ -28,7 +28,7 @@ jobs:
         uses:  iimnurd/jenkins-pipeline/tools/k6@master 
         with:
           cloud: false 
-          args: "flags: --vus 1 --duration 5s"
+          config: config/load-test-jmeter.json
        
       - name: Upload Results
         uses: actions/upload-artifact@v2
