@@ -26,7 +26,7 @@ inputs:
   config:
     description: |
       Performance Test configuration file
-    required: false
+    required: true
     default: ''
   
 runs:
@@ -36,6 +36,7 @@ runs:
     K6_CLOUD_TOKEN: ${{ inputs.token }}
   args:
     - ${{ inputs.cloud }}
+    - ${{ inputs.config }} 
     - ${{ inputs.filename || 'test.js' }}
     - ${{ inputs.flags }}
 branding:
