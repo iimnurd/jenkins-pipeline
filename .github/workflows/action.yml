@@ -25,10 +25,9 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: JMeter Test
-        uses:  iimnurd/jenkins-pipeline@master #QAInsights/PerfAction@v1.3
-        working-directory: tools/jmeter
+        uses:  iimnurd/jenkins-pipeline/tools/jmeter@master #QAInsights/PerfAction@v1.3
         with:
-          test-plan-path: ./TestPlans/test_google.jmx
+          test-plan-path: ./test_google.jmx
           args: ""
        
       - name: Upload Results
