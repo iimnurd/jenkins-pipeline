@@ -25,7 +25,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: K6 Test
-        uses:  iimnurd/jenkins-pipeline/tools/k6@master #QAInsights/PerfAction@v1.3
+        uses:  iimnurd/jenkins-pipeline/tools/k6@master 
         with:
           cloud: false
           config: tools/load-test-jmeter.json 
@@ -35,5 +35,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: k6-results
-          path: result.json
+          path: result_summary.json
  
