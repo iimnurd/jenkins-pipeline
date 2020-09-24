@@ -36,8 +36,6 @@ runs:
     K6_CLOUD_TOKEN: ${{ inputs.token }}
   args:
     - ${{ inputs.cloud }}
-    - "--config"
-    - ${{ inputs.config }}
     - ${{ inputs.filename || 'test.js' }}
     - "--summary-export=result_summary.json --out json=raw_result.json"
     - ${{ inputs.flags }}
