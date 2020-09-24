@@ -27,9 +27,8 @@ jobs:
       - name: K6 Test
         uses:  iimnurd/jenkins-pipeline/tools/k6@master 
         with:
-          cloud: false
-          config: tools/load-test-jmeter.json 
-          args: "--out influxdb=http://103.117.207.204:8086/test_k6"
+          cloud: false 
+          args: "flags: --vus 1 --duration 5s"
        
       - name: Upload Results
         uses: actions/upload-artifact@v2
