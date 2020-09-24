@@ -1,0 +1,167 @@
+{
+    "metrics": {
+        "Error_Rate": {
+            "fails": 20,
+            "passes": 20,
+            "value": 0
+        },
+        "Success_Rate": {
+            "fails": 20,
+            "passes": 20,
+            "value": 0
+        },
+        "Total_Error": {
+            "count": 20,
+            "rate": 4.663491761475455
+        },
+        "Total_Success": {
+            "count": 20,
+            "rate": 4.663491761475455
+        },
+        "checks": {
+            "fails": 20,
+            "passes": 20,
+            "value": 0
+        },
+        "data_received": {
+            "count": 127372,
+            "rate": 29699.91363213258
+        },
+        "data_sent": {
+            "count": 24900,
+            "rate": 5806.047243036941
+        },
+        "group_duration": {
+            "avg": 1489.6871732500001,
+            "max": 2952.03947,
+            "med": 1358.0670785,
+            "min": 277.320105,
+            "p(90)": 2950.4301261,
+            "p(95)": 2951.0804803
+        },
+        "http_req_blocked": {
+            "avg": 936.8967499999987,
+            "max": 1876.085,
+            "med": 934.7185,
+            "min": 0,
+            "p(90)": 1875.6561000000002,
+            "p(95)": 1875.93025
+        },
+        "http_req_connecting": {
+            "avg": 162.78432500000002,
+            "max": 327.938,
+            "med": 160.4165,
+            "min": 0,
+            "p(90)": 327.12210000000005,
+            "p(95)": 327.38555
+        },
+        "http_req_duration": {
+            "avg": 552.2184749999999,
+            "max": 1076.172,
+            "med": 420.72749999999996,
+            "min": 276.517,
+            "p(90)": 1074.2663,
+            "p(95)": 1075.6573999999998,
+            "thresholds": {
+                "avg<100": true,
+                "p(95)<200": true
+            }
+        },
+        "http_req_receiving": {
+            "avg": 0.41152500000000003,
+            "max": 3.464,
+            "med": 0.135,
+            "min": 0.061,
+            "p(90)": 0.5191000000000009,
+            "p(95)": 3.2715499999999995
+        },
+        "http_req_sending": {
+            "avg": 0.6831250000000001,
+            "max": 3.189,
+            "med": 0.331,
+            "min": 0.125,
+            "p(90)": 2.4650000000000007,
+            "p(95)": 3.0879
+        },
+        "http_req_tls_handshaking": {
+            "avg": 514.799475,
+            "max": 1033.932,
+            "med": 512.129,
+            "min": 0,
+            "p(90)": 1030.5581,
+            "p(95)": 1031.5734499999999
+        },
+        "http_req_waiting": {
+            "avg": 551.1238250000002,
+            "max": 1075.691,
+            "med": 420.0635,
+            "min": 275.642,
+            "p(90)": 1073.7531,
+            "p(95)": 1075.0513
+        },
+        "http_reqs": {
+            "count": 40,
+            "rate": 9.32698352295091
+        },
+        "iteration_duration": {
+            "avg": 3980.6143959,
+            "max": 4240.922592,
+            "med": 3952.0681805,
+            "min": 3714.893624,
+            "p(90)": 4239.5460104,
+            "p(95)": 4240.6737433
+        },
+        "iterations": {
+            "count": 20,
+            "rate": 4.663491761475455
+        },
+        "vus": {
+            "max": 20,
+            "min": 7,
+            "value": 7
+        },
+        "vus_max": {
+            "max": 20,
+            "min": 20,
+            "value": 20
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "My Crocodile": {
+                "name": "My Crocodile",
+                "path": "::My Crocodile",
+                "id": "c8048ff4002f1b4562fa02280bb0e35a",
+                "groups": {},
+                "checks": {
+                    "CROCO PAGE": {
+                        "name": "CROCO PAGE",
+                        "path": "::My Crocodile::CROCO PAGE",
+                        "id": "135e1a918e69bf9e62e006c4f50424b8",
+                        "passes": 0,
+                        "fails": 20
+                    }
+                }
+            },
+            "REQUEST 1 (LOGIN)": {
+                "name": "REQUEST 1 (LOGIN)",
+                "path": "::REQUEST 1 (LOGIN)",
+                "id": "f5b2bf69d91aa32dcd429cfca0f3975f",
+                "groups": {},
+                "checks": {
+                    "LOGIN SUCCESS": {
+                        "name": "LOGIN SUCCESS",
+                        "path": "::REQUEST 1 (LOGIN)::LOGIN SUCCESS",
+                        "id": "1d34a029449febe05f253af4e369d057",
+                        "passes": 20,
+                        "fails": 0
+                    }
+                }
+            }
+        },
+        "checks": {}
+    }
+}

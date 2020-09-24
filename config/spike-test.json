@@ -1,0 +1,21 @@
+{ 
+    "stages": [
+      {
+        "duration": "5s",
+        "target": 5
+      },
+      {
+        "duration": "5s",
+        "target": 200
+      },
+      {
+        "duration": "5s",
+        "target": 0
+      }
+    ],
+    "thresholds": {
+      "http_req_duration": ["avg<100", "p(95)<200"],
+      "Error Rate": ["rate<0.7"]  
+    }
+    
+  }
