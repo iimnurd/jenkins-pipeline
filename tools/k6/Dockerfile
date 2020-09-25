@@ -13,7 +13,8 @@ RUN apt-get update && apt-get install -y gnupg2 && \
     apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61 && \
     echo "deb https://dl.bintray.com/loadimpact/deb stable main" > /etc/apt/sources.list.d/k6.list && \
     chmod a+x /entrypoint.sh && \
-    apt-get install k6
+    apt-get update && apt-get install -y k6
+    
 
 
 ENTRYPOINT [ "/entrypoint.sh" ]
