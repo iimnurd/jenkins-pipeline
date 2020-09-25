@@ -30,11 +30,13 @@ jobs:
           cloud: false 
           filename: tools/k6/default.js
           config: config/load-test-jmeter.json
-          flags: --summary-export=result_summary.json --out json=result_raw.json
+          flags: --summary-export=result_summary.json 
        
-     - name: Upload Results
-       uses: actions/upload-artifact@v2
-       with:
+      - name: Upload Results
+        uses: actions/upload-artifact@v2
+        with:
           name: k6-results
-          path: result_summary.json
+          path: |
+            result_summary.json
+            result_raw.json
  
