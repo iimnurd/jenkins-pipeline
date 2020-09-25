@@ -10,8 +10,7 @@ COPY entrypoint.sh /entrypoint.sh
 
 
 RUN apt-get update && \
-    apt-get gpg2 && \
-    apt-get bash && \
+    apt-get install bash && \
     apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61 && \
     echo "deb https://dl.bintray.com/loadimpact/deb stable main" |  tee -a /etc/apt/sources.list && \
     chmod a+x /entrypoint.sh && \
