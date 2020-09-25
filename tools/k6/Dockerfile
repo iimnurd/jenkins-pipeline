@@ -17,6 +17,5 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D4
     apt-get install k6
 
 
-
 ENTRYPOINT [ "/entrypoint.sh" ]
 
