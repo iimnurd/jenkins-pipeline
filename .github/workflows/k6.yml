@@ -34,8 +34,8 @@ jobs:
         #  flags: --out influxdb=http://103.117.207.204:8086/test_k6
           #flags: --summary-export=result_summary.json --out json=result_raw.json  --out influxdb=http://103.117.207.204:8086/test_k6
      - name: Upload Results
-        uses: actions/upload-artifact@v2
-        with:
+       uses: actions/upload-artifact@v2
+       with:
           name: k6-results
           path: result_summary.json
  
